@@ -32,13 +32,16 @@ $ python3 demo.py "This is a simple title" "Python is cool <3"
 This will produce output like this:
 ![output](https://i.ibb.co/R7vB2rk/output.png)
 
-## You can customize message by chaning arguments
+## You can customize message by changing arguments
 ```python
 msg = Message(
-    header = "Simple Title",
-    sub_header = "Simple desciption",
+    header = header,
+    sub_header = sub_header,
     image_size = Size(1920, 1920),
-    message_size = Size(1080, 1080)
+    message_size = Size(1080, 1080),
+    background_color = Color(255, 255, 51),
+    message_color = Color(64, 64, 64),
+    font_color = Color(255, 255, 255)
 )
 ```
 Then run
